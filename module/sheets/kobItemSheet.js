@@ -1,5 +1,13 @@
 export default class kobItemSheet extends ItemSheet {
 
+    static get defaultOptions() {
+        return mergeObject(super.defaultOptions, {
+            width: 500,
+            height: 350,
+            classes: ["kob", "sheet", "item"]
+        });
+    }
+
     get template() {
         return `systems/kob/templates/sheets/${this.item.data.type}-sheet.html`;
     }

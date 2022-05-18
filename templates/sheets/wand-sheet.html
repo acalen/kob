@@ -4,7 +4,7 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
     </header>
     <!-- <p>Hello World!</p> -->
-    <div>
+    <div class="sheet-content">
         <section>
             <table>
                 <tr>
@@ -52,9 +52,7 @@
                 </tr>
             </table>
         </section>
-        <section>
-            <label for="data.wandDescription">{{localize "kob.wand.description"}}:</label>
-            <textarea name="data.wandDescription">{{data.wandDescription}}</textarea>
-        </section>
+        {{editor content=data.wandDescription target="data.wandDescription" button=true owner=owner
+        editable=editable}}
     </div>
 </form>
