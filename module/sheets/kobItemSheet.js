@@ -5,10 +5,15 @@ export default class kobItemSheet extends ItemSheet {
     }
 
     getData() {
-        const data = super.getData();
+        const baseData = super.getData();
+        let sheetData = {
+            owner: this.item.isOwner,
+            editable: this.isEditable,
+            item: baseData.item,
+            data: baseData.item.data.data,
+            config: CONFIG.kob
+        };
 
-        data.config = CONFIG.kob;
-
-        return data;
+        return sheetData;
     }
 }

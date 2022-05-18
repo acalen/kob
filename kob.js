@@ -1,5 +1,5 @@
 // Import Modules
-import { kob } from ".module/config.js";
+import { kob } from "./module/config.js";
 import kobItemSheet from "./module/sheets/kobItemSheet.js";
 
 //Import Documents
@@ -9,7 +9,7 @@ import kobItemSheet from "./module/sheets/kobItemSheet.js";
 //Import Helpers
 
 /*------------------------------------------- */
-/* Foundry VTT Initiializatio                 */
+/* Foundry VTT Initiialization                */
 /*------------------------------------------- */
 
 Hooks.once("init", function () {

@@ -3,58 +3,58 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
     </header>
-
-    <body>
-        <div>
+    <!-- <p>Hello World!</p> -->
+    <div>
+        <section>
             <table>
                 <tr>
-                    <th>Component</th>
-                    <th>Stat</th>
-                    <th>Bonus</th>
+                    <th>{{localize "kob.wand.component"}}</th>
+                    <th>{{localize "kob.wand.magicStat"}}</th>
+                    <th>{{localize "kob.wand.magicBonus"}}</th>
                 </tr>
                 <tr>
                     <td>
-                        <label for="wand-exterior">Exterior:</label>
-                        <input name="wand-exterior" type="text" />
+                        <label for="data.wandExterior">{{localize "kob.wand.exterior"}}:</label>
+                        <input name="data.wandExterior" type="text" value="{{data.wandExterior}}" />
                     </td>
                     <td>
-                        <select>
-                            <option></option>
-                            <option>Brains</option>
-                            <option>Brawn</option>
-                            <option>Fight</option>
-                            <option>Flight</option>
-                            <option>Charm</option>
-                            <option>Grit</option>
+                        <select name="data.magicStat1">
+                            {{#select data.magicStat1}}
+                            {{#each config.magicTypes as |name type|}}
+                            <option value="{{type}}">{{localize name}}</option>
+                            {{/each}}
+                            {{/select}}
                         </select>
                     </td>
                     <td>
-                        <input type="number" />
+                        <input name="data.magicBonus1" type="text" value="{{data.magicBonus1}}" data-dtype="Number"
+                            placeholder="0" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="wand-core">Core:</label>
-                        <input name="wand-core" type="text" />
+                        <label for="data.wandCore">{{localize "kob.wand.core"}}:</label>
+                        <input name="data.wandCore" type="text" value="{{data.wandCore}}" />
                     </td>
                     <td>
-                        <select>
-                            <option></option>
-                            <option>Brains</option>
-                            <option>Brawn</option>
-                            <option>Fight</option>
-                            <option>Flight</option>
-                            <option>Charm</option>
-                            <option>Grit</option>
+                        <select name="data.magicStat2">
+                            {{#select data.magicStat2}}
+                            {{#each config.magicTypes as |name type|}}
+                            <option value="{{type}}">{{localize name}}</option>
+                            {{/each}}
+                            {{/select}}
                         </select>
                     </td>
                     <td>
-                        <input type="number" />
+                        <input name="data.magicBonus2" type="text" value="{{data.magicBonus2}}" data-dtype="Number"
+                            placeholder="0" />
                     </td>
                 </tr>
             </table>
-            <label for="wand-description">Description:</label>
-            <textarea name="wand-description"></textarea>
-        </div>
-    </body>
+        </section>
+        <section>
+            <label for="data.wandDescription">{{localize "kob.wand.description"}}:</label>
+            <textarea name="data.wandDescription">{{data.wandDescription}}</textarea>
+        </section>
+    </div>
 </form>

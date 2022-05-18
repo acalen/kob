@@ -8,6 +8,14 @@
             "flight": "Flight",
             "charm": "Charm",
             "grit": "Grit"
+        },
+        "wand": {
+            "component": "Component",
+            "magicStat": "Magic Stat",
+            "magicBonus": "Bonus",
+            "exterior": "Exterior",
+            "core": "Core",
+            "description": "Description"
         }
     }
 }
