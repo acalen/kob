@@ -1,0 +1,21 @@
+{
+    "Actor": {
+        "types": [
+            "pc"
+        ],
+        "pc": {
+            "health": {
+                "value": 21,
+                "max": 21
+            }
+        }
+    },
+    "Item": {
+        "types": [
+            "wand"
+        ],
+        "wand": {
+            "damage": 5
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "kob",
+    "title": "Kids on Brooms",
+    "description": "A module to play Kids on Brooms on Foundry VTT!",
+    "version": "1.0.0",
+    "templateVersion": 2,
+    "author": "Acalen",
+    "scripts": [
+        "kob.js"
+    ],
+    "esmodules": [],
+    "styles": [],
+    "packs": [],
+    "dependencies": [],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "socket": false,
+    "initiative": "",
+    "gridDistance": 5,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "",
+    "secondaryTokenAttribute": "",
+    "url": "",
+    "manifest": "",
+    "download": ""
+}
