@@ -3,7 +3,58 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
     </header>
-    <div>
-        DAMAGE: {{data.damage}}
-    </div>
+
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <th>Component</th>
+                    <th>Stat</th>
+                    <th>Bonus</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="wand-exterior">Exterior:</label>
+                        <input name="wand-exterior" type="text" />
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                            <option>Brains</option>
+                            <option>Brawn</option>
+                            <option>Fight</option>
+                            <option>Flight</option>
+                            <option>Charm</option>
+                            <option>Grit</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="wand-core">Core:</label>
+                        <input name="wand-core" type="text" />
+                    </td>
+                    <td>
+                        <select>
+                            <option></option>
+                            <option>Brains</option>
+                            <option>Brawn</option>
+                            <option>Fight</option>
+                            <option>Flight</option>
+                            <option>Charm</option>
+                            <option>Grit</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" />
+                    </td>
+                </tr>
+            </table>
+            <label for="wand-description">Description:</label>
+            <textarea name="wand-description"></textarea>
+        </div>
+    </body>
 </form>

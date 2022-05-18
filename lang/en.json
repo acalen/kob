@@ -1,0 +1,13 @@
+{
+    "kob": {
+        "magic": {
+            "none": "",
+            "brains": "Brains",
+            "brawn": "Brawn",
+            "fight": "Fight",
+            "flight": "Flight",
+            "charm": "Charm",
+            "grit": "Grit"
+        }
+    }
+}

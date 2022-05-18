@@ -1,8 +1,31 @@
 {
     "Actor": {
         "types": [
-            "pc"
+            "pc",
+            "npc"
         ],
+        "templates": {
+            "stats": {
+                "fight": {
+                    "value": 0
+                },
+                "flight": {
+                    "value": 0
+                },
+                "brains": {
+                    "value": 0
+                },
+                "brawn": {
+                    "value": 0
+                },
+                "charm": {
+                    "value": 0
+                },
+                "grit": {
+                    "value": 0
+                }
+            }
+        },
         "pc": {
             "health": {
                 "value": 21,
@@ -12,10 +35,63 @@
     },
     "Item": {
         "types": [
-            "wand"
+            "wand",
+            "broom",
+            "strength",
+            "flaw",
+            "grade"
         ],
+        "templates": {
+            "magic-bonus": {
+                "fight": {
+                    "value": 0
+                },
+                "flight": {
+                    "value": 0
+                },
+                "brains": {
+                    "value": 0
+                },
+                "brawn": {
+                    "value": 0
+                },
+                "charm": {
+                    "value": 0
+                },
+                "grit": {
+                    "value": 0
+                }
+            },
+            "ability-bonus": {
+                "fight": {
+                    "value": 0
+                },
+                "flight": {
+                    "value": 0
+                },
+                "brains": {
+                    "value": 0
+                },
+                "brawn": {
+                    "value": 0
+                },
+                "charm": {
+                    "value": 0
+                },
+                "grit": {
+                    "value": 0
+                }
+            }
+        },
         "wand": {
-            "damage": 5
+            "templates": [
+                "magic-bonus"
+            ]
+        },
+        "grade": {
+            "templates": [
+                "ability-bonus"
+            ]
         }
     }
 }

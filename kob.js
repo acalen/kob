@@ -1,7 +1,23 @@
+// Import Modules
+import { kob } from ".module/config.js";
 import kobItemSheet from "./module/sheets/kobItemSheet.js";
-Hooks.once("init", function () {
-    console.log("KoB | Initializing Kids on Brooms");
 
+//Import Documents
+
+//Import Applications
+
+//Import Helpers
+
+/*------------------------------------------- */
+/* Foundry VTT Initiializatio                 */
+/*------------------------------------------- */
+
+Hooks.once("init", function () {
+    console.log("KoB | Initializing the Kids on Brooms Game System");
+
+    CONFIG.kob = kob;
+
+    // Register sheet application classes
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("kob", kobItemSheet, { makeDefault: true });
 });
