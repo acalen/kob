@@ -49,6 +49,11 @@
                     "magic": ""
                 }
             }
+        },
+        "adversityTokens": {
+            "min": 0,
+            "value": 3,
+            "max": 9999
         }
     },
     "Item": {

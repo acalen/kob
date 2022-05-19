@@ -11,7 +11,8 @@ import kobCharacterSheet from "./module/sheets/kobCharacterSheet.js";
 
 async function preloadHandlebarsTemplates() {
     const templatePaths = [
-        "systems/kob/templates/partials/stat-block.hbs"
+        "systems/kob/templates/partials/stat-block.hbs",
+        "systems/kob/templates/partials/adversity-tokens.hbs"
     ];
 
     return loadTemplates(templatePaths);
