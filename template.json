@@ -7,30 +7,58 @@
         "templates": {
             "stats": {
                 "fight": {
-                    "value": 0
+                    "value": 0,
+                    "bonuses": {
+                        "ability": "",
+                        "magic": ""
+                    }
                 },
                 "flight": {
-                    "value": 0
+                    "value": 0,
+                    "bonuses": {
+                        "ability": "",
+                        "magic": ""
+                    }
                 },
                 "brains": {
-                    "value": 0
+                    "value": 0,
+                    "bonuses": {
+                        "ability": "",
+                        "magic": ""
+                    }
                 },
                 "brawn": {
-                    "value": 0
+                    "value": 0,
+                    "bonuses": {
+                        "ability": "",
+                        "magic": ""
+                    }
                 },
                 "charm": {
-                    "value": 0
+                    "value": 0,
+                    "bonuses": {
+                        "ability": "",
+                        "magic": ""
+                    }
                 },
                 "grit": {
-                    "value": 0
+                    "value": 0,
+                    "bonuses": {
+                        "ability": "",
+                        "magic": ""
+                    }
                 }
             }
         },
         "pc": {
-            "health": {
-                "value": 21,
-                "max": 21
-            }
+            "templates": [
+                "stats"
+            ]
+        },
+        "npc": {
+            "templates": [
+                "stats"
+            ]
         }
     },
     "Item": {

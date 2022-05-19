@@ -1,6 +1,7 @@
 // Import Modules
 import { kob } from "./module/config.js";
 import kobItemSheet from "./module/sheets/kobItemSheet.js";
+import kobCharacterSheet from "./module/sheets/kobCharacterSheet.js";
 
 //Import Documents
 
@@ -20,4 +21,7 @@ Hooks.once("init", function () {
     // Register sheet application classes
     Items.unregisterSheet("core", ItemSheet);
     Items.registerSheet("kob", kobItemSheet, { makeDefault: true });
+
+    Actors.unregisterSheet("core", ActorSheet);
+    Actors.registerSheet("kob", kobCharacterSheet, { makeDefault: true });
 });
