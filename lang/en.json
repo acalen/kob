@@ -1,5 +1,13 @@
 {
     "kob": {
+        "stats": {
+            "brains": "Brains",
+            "brawn": "Brawn",
+            "fight": "Fight",
+            "flight": "Flight",
+            "charm": "Charm",
+            "grit": "Grit"
+        },
         "magic": {
             "none": "",
             "brains": "Brains",
@@ -16,6 +24,15 @@
             "exterior": "Exterior",
             "core": "Core",
             "description": "Description"
+        },
+        "dice": {
+            "none": "",
+            "d4": "d4",
+            "d6": "d6",
+            "d8": "d8",
+            "d10": "d10",
+            "d12": "d12",
+            "d20": "d20"
         }
     }
 }

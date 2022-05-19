@@ -1,64 +1,54 @@
 {
     "Actor": {
-        "types": [
-            "pc",
-            "npc"
-        ],
-        "templates": {
-            "stats": {
-                "fight": {
-                    "value": 0,
-                    "bonuses": {
-                        "ability": "",
-                        "magic": ""
-                    }
-                },
-                "flight": {
-                    "value": 0,
-                    "bonuses": {
-                        "ability": "",
-                        "magic": ""
-                    }
-                },
-                "brains": {
-                    "value": 0,
-                    "bonuses": {
-                        "ability": "",
-                        "magic": ""
-                    }
-                },
-                "brawn": {
-                    "value": 0,
-                    "bonuses": {
-                        "ability": "",
-                        "magic": ""
-                    }
-                },
-                "charm": {
-                    "value": 0,
-                    "bonuses": {
-                        "ability": "",
-                        "magic": ""
-                    }
-                },
-                "grit": {
-                    "value": 0,
-                    "bonuses": {
-                        "ability": "",
-                        "magic": ""
-                    }
+        "stats": {
+            "fight": {
+                "value": "",
+                "label": "Fight",
+                "bonuses": {
+                    "ability": "",
+                    "magic": ""
+                }
+            },
+            "flight": {
+                "value": "",
+                "label": "Flight",
+                "bonuses": {
+                    "ability": "",
+                    "magic": ""
+                }
+            },
+            "brains": {
+                "value": "",
+                "label": "Brains",
+                "bonuses": {
+                    "ability": "",
+                    "magic": ""
+                }
+            },
+            "brawn": {
+                "value": "",
+                "label": "Brawn",
+                "bonuses": {
+                    "ability": "",
+                    "magic": ""
+                }
+            },
+            "charm": {
+                "value": "",
+                "label": "Charm",
+                "bonuses": {
+                    "ability": "",
+                    "magic": ""
+                }
+            },
+            "grit": {
+                "value": "",
+                "label": "Grit",
+                "bonuses": {
+                    "ability": "",
+                    "magic": ""
                 }
             }
-        },
-        "pc": {
-            "templates": [
-                "stats"
-            ]
-        },
-        "npc": {
-            "templates": [
-                "stats"
-            ]
         }
     },
     "Item": {

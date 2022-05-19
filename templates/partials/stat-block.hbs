@@ -1,0 +1,82 @@
+<section>
+    <table>
+        <tr>
+            <td>
+                <label for="data.stats.fight.value">{{localize "kob.stats.fight"}}</label>
+            </td>
+            <td>
+                <select name="data.stats.fight.value">
+                    {{#select data.stats.fight.value}}
+                    {{#each config.statValues as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <select name="data.stats.flight.value">
+                    {{#select data.stats.flight.value}}
+                    {{#each config.statValues as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <label for="data.stats.flight.value">{{localize "kob.stats.flight"}}</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="data.stats.brains.value">{{localize "kob.stats.brains"}}</label>
+            </td>
+            <td>
+                <select name="data.stats.brains.value">
+                    {{#select data.stats.brains.value}}
+                    {{#each config.statValues as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <select name="data.stats.brawn.value">
+                    {{#select data.stats.brawn.value}}
+                    {{#each config.statValues as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <label for="data.stats.brawn.value">{{localize "kob.stats.brawn"}}</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="data.stats.charm.value">{{localize "kob.stats.charm"}}</label>
+            </td>
+            <td>
+                <select name="data.stats.charm.value">
+                    {{#select data.stats.charm.value}}
+                    {{#each config.statValues as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <select name="data.stats.grit.value">
+                    {{#select data.stats.grit.value}}
+                    {{#each config.statValues as |name type|}}
+                    <option value="{{type}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+            <td>
+                <label for="data.stats.grit.value">{{localize "kob.stats.grit"}}</label>
+            </td>
+        </tr>
+    </table>
+</section>

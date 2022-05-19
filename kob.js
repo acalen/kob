@@ -9,6 +9,14 @@ import kobCharacterSheet from "./module/sheets/kobCharacterSheet.js";
 
 //Import Helpers
 
+async function preloadHandlebarsTemplates() {
+    const templatePaths = [
+        "systems/kob/templates/partials/stat-block.hbs"
+    ];
+
+    return loadTemplates(templatePaths);
+};
+
 /*------------------------------------------- */
 /* Foundry VTT Initiialization                */
 /*------------------------------------------- */
@@ -24,4 +32,6 @@ Hooks.once("init", function () {
 
     Actors.unregisterSheet("core", ActorSheet);
     Actors.registerSheet("kob", kobCharacterSheet, { makeDefault: true });
+
+    preloadHandlebarsTemplates();
 });
